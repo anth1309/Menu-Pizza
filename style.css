@@ -1,0 +1,95 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  background-color: #eee;
+  padding: 60px;
+}
+
+.container {
+  width: 1600px;
+  display: flex;
+  flex-direction: column;
+}
+
+.paiement,
+li,
+h1 {
+  font-size: 1.8em;
+}
+
+h1 {
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: solid black 2px;
+  border-radius: 8px;
+  margin: 10px;
+}
+
+ul {
+  margin: 20px;
+}
+
+li {
+  width: 100%;
+  display: flex;
+  margin: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-image: url(./image/ligneSeparation.png);
+  background-repeat: repeat-x;
+  background-position-y: 60%;
+  justify-content: space-between;
+}
+.droite {
+  display: flex;
+  background-color: #eee;
+  padding-left: 20px;
+}
+
+.gauche {
+  display: flex;
+  background-color: #eee;
+  padding-right: 20px;
+}
+
+.prix {
+  width: 50px;
+}
+
+.moins:hover,
+.plus:hover {
+  color: red;
+}
+.moins,
+.plus {
+  width: 40px;
+  display: flex;
+  display: inline-block;
+  text-align: center;
+}
+.quantite {
+  width: 40px;
+  display: inline-block;
+  text-align: center;
+  background-color: rgb(65, 65, 189);
+}
+
+.prixLigne,
+.total {
+  width: 50px;
+  display: inline-block;
+  text-align: center;
+
+  background-color: brown;
+}
+.paiement {
+  margin: 10px;
+  display: flex;
+  justify-content: flex-end;
+}
