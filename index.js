@@ -1,8 +1,12 @@
 document.addEventListener("DOMContentLoaded", function () {
   let selection = document.querySelectorAll("li");
   let commande = new Map();
+
+  const boutonPaiement = document.querySelector(".boutonPaiement");
+
   selection.forEach((pizza, i) => {
     commande.set(pizza.dataset.type, 0);
+    console.log(commande);
 
     pizza.querySelector(".plus").addEventListener("click", () => {
       pizza.querySelector(".quantite").innerHTML++;
@@ -11,6 +15,8 @@ document.addEventListener("DOMContentLoaded", function () {
       document.querySelector(".total").innerHTML =
         Number(document.querySelector(".total").innerHTML) +
         Number(pizza.dataset.prix);
+
+      boutonPaiement.classList.add("visible");
     });
 
     pizza.querySelector(".moins").addEventListener("click", () => {
@@ -25,4 +31,3 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 });
-//Number(document.querySelector(".total").value.innerHTML) +
