@@ -10,7 +10,7 @@
     <div class="container">
       <h1>CARTE DES PIZZAS</h1>
       <ul>
-        <li data-prix="8" data-type="reine" data-id="1">
+        <li data-prix="8" data-type="Reine" data-id="1">
           <span class="gauche"
             ><strong>Reine : </strong> tomate,jambon,fromage,olives</span
           >
@@ -22,7 +22,7 @@
           </span>
         </li>
 
-        <li data-prix="8" data-type="reineBlanche" data-id="2">
+        <li data-prix="8" data-type="Reine Blanche" data-id="2">
           <span class="gauche"
             ><strong>Reine blanche : </strong> créme,jambon,fromage,olives</span
           >
@@ -34,7 +34,7 @@
           </span>
         </li>
 
-        <li data-prix="9" data-type="napolitaine" data-id="3">
+        <li data-prix="9" data-type="Napolitaine" data-id="3">
           <span class="gauche"
             ><strong>Napolitaine : </strong> tomate,fromage,olives,anchois</span
           >
@@ -46,7 +46,7 @@
           </span>
         </li>
 
-        <li data-prix="10" data-type="estoril" data-id="4">
+        <li data-prix="10" data-type="Estoril" data-id="4">
           <span class="gauche"
             ><strong>Estoril : </strong> tomate,fromage,olives,chorizo</span
           >
@@ -58,7 +58,7 @@
           </span>
         </li>
 
-        <li data-prix="11" data-type="aubergine" data-id="5">
+        <li data-prix="11" data-type="Aubergine" data-id="5">
           <span class="gauche"
             ><strong>Aubergine : </strong> tomate,fromage,olives,aubergine,huile
             au basilic</span
@@ -84,7 +84,7 @@
           </span>
         </li>
 
-        <li data-prix="12" data-type="laSpecial" data-id="7">
+        <li data-prix="12" data-type="La Special" data-id="7">
           <span class="gauche"
             ><strong>La spéciale : </strong>
             tomate,fromage,chorizo,merguez,olives</span
@@ -101,8 +101,20 @@
         <span>Total : </span><span class="total" data-tot="0">0</span
         ><span>€</span>
       </div>
+
       <div class="boutonPaiement">
-        <button>PAYEZ MAINTENANT</button>
+        <div>
+          <label for="récapCommande"> Votre commande :</label
+          ><input
+            type="text"
+            name="descriptionInput"
+            id="récapCommande"
+            maxlength="127"
+            value=""
+            readonly="readonly"
+          />
+        </div>
+        <button>PAYER MAINTENANT</button>
       </div>
     </div>
 
