@@ -49,7 +49,7 @@ document.addEventListener("DOMContentLoaded", function () {
     function affichercommande(commande) {
       let commandeFinale = "";
       for (var [key, value] of commande) {
-        if (value != 0) commandeFinale += `  \n${key} ${value} `;
+        if (value != 0) commandeFinale += `  ${key} ${value}\n `;
       }
       document.querySelector("#récapCommande").value = commandeFinale;
     }

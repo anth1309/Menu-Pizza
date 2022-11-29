@@ -105,14 +105,14 @@
       <div class="boutonPaiement">
         <div>
           <label for="récapCommande"> Votre commande :</label
-          ><input
-            type="text"
-            name="descriptionInput"
+          ><textarea
             id="récapCommande"
-            maxlength="127"
+            name="récapCommande"
+            rows="4"
+            cols="50"
             value=""
             readonly="readonly"
-          />
+          ></textarea>
         </div>
         <button>PAYER MAINTENANT</button>
       </div>
@@ -121,3 +121,13 @@
     <script type="text/javascript" src="./index.js"></script>
   </body>
 </html>
+
+<!-- 
+<input
+            type="text"
+            name="descriptionInput"
+            id="récapCommande"
+            maxlength="127"
+            value=""
+            readonly="readonly"
+          /> -->
